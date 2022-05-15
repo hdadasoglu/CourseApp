@@ -1,0 +1,18 @@
+@* Course sınıfımızı burada kullanılabilir yaptık. *@
+@model CourseApp.Models.Course
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+</head>
+<body>
+    @*Model. diyerek sınıfın propertilerine ulaşabildik. Peki birden çok sınıf olursa nasıl bir tanımlama yapcağız ?*@
+    <p>Kursun adı : @Model.Name</p>
+    <p>Kursun açıklaması : @Model.Description</p>
+    <p>Kurs yayınlandı mı: @Model.IsPublished</p>
+</body>
+</html>
